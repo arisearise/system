@@ -1,0 +1,27 @@
+header{
+	background-color:lightgreen;
+	padding:10px;
+}
+.sidebar-sticky{
+background-color:#D9F4EE;
+height:10%;
+width:200px;
+text-align:left;
+overflow:scroll;
+}
+#tabs {
+    background-color: #A2D8D1;
+    color: black;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-left: 2px;
+    border: 2px solid #A2D8D1;
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+}
+.companyList{
+	padding-left:10px;
+	padding-top:2px;
+}

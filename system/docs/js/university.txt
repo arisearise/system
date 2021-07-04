@@ -1,0 +1,48 @@
+/*function onSubmit(no)	{
+ $("#university_id .university-span").click(function () {  
+    $('#university_id').submit();  
+});   
+$('#university_id').submit(function() {
+	key = 'university_name-' + no;
+	university_name = document.getElementById(key).value;
+	console.log(university_name);
+})};  
+function Click(no){
+			key = 'university_name-' + no;
+			console.log(key);
+			university_name = document.getElementById(key).value;
+			console.log(university_name);
+}*/
+var university = function(no){
+		this.onSubmit =function(){
+			key = 'university_name-' + no;
+			console.log(key);
+			 window.onload = function(){  
+				university_name = document.getElementById(key).value;
+				console.log(university_name);
+			 }
+			}
+		}
+		var uni = new university(1);
+		university.prototype.getCampus = function(university_name){
+			var request = new XMLHttpRequest();
+ 			
+ 			request.onreadystatechange = function() {
+ 				if(request.readyState === 4 && request.status === 200) {
+ 					console.log( request.responseText );
+ 				} else {
+			     console.log("status = " + request.status);
+				}
+			}
+ 			
+    		request.open('GET', university_name, true);
+    		request.responseType = 'json';
+ 
+    		request.onload = function () {
+      		var data = this.response;
+      		console.log(data);
+    		};
+ 		
+ 			request.send();
+ 		}
+ 		var campus = new university();

@@ -1,0 +1,49 @@
+html, body{
+	height:100%;
+}
+.row{
+	position:relative;
+}
+header{
+padding:10px;
+background-color:lightgreen;
+}
+#tabs {
+    background-color: #A2D8D1;
+    color: black;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    margin-left: 2px;
+    border: 2px solid #A2D8D1;
+    border-left-width: 5px;
+    border-right-width: 2px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+}
+.sidebar-sticky{
+background-color:#D9F4EE;
+height:10%;
+width:200px;
+text-align:left;
+overflow:scroll;
+}
+.university-span{
+	padding-left:10px;
+	padding-top:10px;
+	margin:1px;
+	width:100hv;
+	line-height:1;
+	display:block;
+}
+.university-span:hover{
+	background-color:#A2D8D1
+}
+.university-span:active{
+	background-color:black;
+}
+#research_id{
+	padding:1px;
+}
+footer{
+ relation:absolute;
+}

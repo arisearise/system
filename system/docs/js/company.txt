@@ -1,0 +1,11 @@
+function onSubmit(no){
+  			cmp = 'company_name-' + no;
+  			console.log(cmp);
+  			cmp_name = document.getElementById(cmp).value;
+  			console.log(cmp_name);
+  			$('#id-' +no).submit();
+  		}
+  		
+function onResearch(research){
+	
+}
